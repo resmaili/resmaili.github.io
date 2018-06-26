@@ -1,0 +1,184 @@
+<!--<!DOCTYPE html>-->
+
+<html>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    
+    <title>Scientific Workshop</title>
+         
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <style>
+        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
+        .w3-sidebar {
+          z-index: 3;
+          width: 250px;
+          top: 0px;
+          bottom: 0;
+          height: inherit;
+        }
+    </style>
+    
+<body>
+
+<!-- Sidebar -->
+<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+    <i class="fa fa-remove"></i>
+  </a>
+  <h4 class="w3-bar-item"><b>Menu</b></h4>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#overview">Overview</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#objectives">Objectives</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#agenda">Agenda</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#setup">Set-up</a>
+  <a class="w3-bar-item w3-button w3-hover-black" href="#resources">Resources</a>
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+<div class="w3-main" style="margin-left:250px">
+
+  <div class="w3-row w3">
+    <div class="w3-threequarter w3-container">
+        <h2 class="w3-text-indigo"> Snakes on a Satellite: Using Python and modern tools for research and analysis of next generation satellite data products </h2>
+        <h5 class="w3-text-grey"> Instructor: Rebekah Esmaili </h5>
+    </div>
+
+        <div class="w3-twothird w3-container">
+            <h3 class="w3-text-indigo" id="overview"> Overview </h3>
+            <p>Are you tired of wrestling with satellite-based datasets? In this tutorial, you will get a crash course on using Python and other modern tools to analyze your satellite datasets which can speed up the learning curve and improve research efficiency. We’ll cover the basics of the NetCDF and HDF self-describing data formats, display data FAST using Panoply, and demo basic analysis using Python. Additionally, we share some of the best practices such as using version control and clean coding guidelines. This session will be beneficial for both experienced programmers who want overview of modern tools and also those just getting started with scientific programming. While examples will focus on GOES-R aerosol and radiation datasets, the presented tools and techniques can be applied to other NASA and NOAA scientific datasets across any discipline. No prior experience required. </p>
+        </div>
+        
+         <div class="w3-third w3-container">
+            <img class="w3-image" src="https://www.dropbox.com/s/pm57evjve3l7ghj/storm.jpg">
+         </div>
+
+    </div>
+
+      <div class="w3-row w3">
+        <div class="w3-twothird w3-container">
+            <h3 class="w3-text-indigo" id="objectives"> Objectives </h3>
+             <p> This course is designed to introduce earth scientists to modern programming tools and techniques to view and analyze data. The primary goal is for attendees to:
+             <ul>
+                <li>Understand the basic structure of array-oriented scientific datasets
+                <li>Practice importing data into Python using NetCDF APIs 
+                <li>Perform basic analysis using Python
+                <li>Gain familiarity with good coding practices, e.g. version control, clean coding, and project development
+                <li>Introduce the helpful resources attendees need when they do get stuck
+            </ul>
+             </p>
+        </div>
+         
+    </div>
+    
+  <div class="w3-row w3">
+  
+        <div class="w3-twothird w3-container">
+            <h3 class="w3-text-indigo" id="agenda"> Agenda </h3>
+            <p>
+            <ul>
+                <li> This is a “bring you own laptop” event.
+                <li> Please see the <a href="#setup">set-up instructions</a> prior to the beginning of the course. If further assistance is needed, contact the instructor in advance as time will be limited before the seminar.
+                <li> All sample code and resources will be available on the <a href="https://github.com/resmaili/modern-tools-workshop">workshop github repository </a>.
+                <li> The instructor will remain on-site after the workshop to assist with any individual questions/projects.
+            </ul>
+
+            <table class="w3-table w3-striped">
+              <tr><th>7:30am</th><th>Meet and greet/computing environment set-up</th></tr>
+              <tr><th>8:00am</th><th>Introduction to scientific data formats</th></tr>
+              <tr><th>8:30am</th><th>Viewing data with Panoply</th></tr>
+              <tr><th>9:00am</th><th>Importing and displaying data with Python</th></tr>
+              <tr><th>10:00am</th><th>BREAK</th></tr>
+              <tr><th>10:15am</th><th>Basic analysis with Python</th></tr>
+              <tr><th>11:30am</th><th>Best coding practices and additional resources</th></tr>
+              <tr><th>12:00pm</th><th>ADJOURN</th></tr>
+            </table>
+        </p>
+        </div>
+    
+        <div class="w3-third w3-container">
+            <img class="w3-image" src="https://www.dropbox.com/s/7831u3kdjshanb1/hurricanes.jpg">
+         </div>
+         
+</div>
+    <div class="w3-row w3">
+        <div class="w3-twothird w3-container">
+        
+            <h3 class="w3-text-indigo" id="setup"> Pre-workshop set-up </h3>
+            <p> Please download and/or install the following before the session begins:
+            <ul>
+            <li> <a href="https://goo.gl/forms/VzBiGNo1kRzWPxB02">Pre-workshop survey</a>
+            <li> <a href="https://github.com/resmaili/modern-tools-workshop">Sample Code</a>
+            <li> <a href="https://anaconda.org/anaconda/python">Anaconda Python</a>
+            <li> <a href="https://www.giss.nasa.gov/tools/panoply/">Panoply</a>
+            </ul>
+            </p>
+            
+        </div>
+        
+                <div class="w3-third w3-container">
+            <img class="w3-image" src="https://www.dropbox.com/s/qancu4osfblmig1/channels.jpg">
+        </div>
+        
+    </div>
+    
+    
+    <div class="w3-row w3">
+        <div class="w3-twothird w3-container">
+        
+            <h3 class="w3-text-indigo" id="resources"> Resources </h3>
+            <p>
+                <ul>
+                <li>  Meeting Slides [ COMING SOON! ]
+                <li> NetCDF APIs [ COMING SOON! ]
+                <li> Introduction to Python for Earth Scientists [ COMING SOON! ]
+                <li> <a href="https://guides.github.com/activities/hello-world/"> Getting started with Github </a>
+                <li> <a href="https://read.amazon.com/kp/embed?asin=B001GSTOAM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_CKKmBb2W9S12E"> Clean Coding: A Handbook of Agile Software Craftsmanship </a> 
+                </ul>
+            </p>
+            
+        </div>
+    </div>
+    
+    <div class="w3-row w3 w3-margin-bottom">
+        <div class="w3-twothird w3-container">
+            <h3 class="w3-text-indigo" id="resources"> Inclusivity </h3>
+            <p>It is my intent to create a learning environment that is respectful of diversity: gender, sexuality, disability, age, socioeconomic status, ethnicity, race, and culture. Your suggestions are encouraged and appreciated.</p>
+        </div>
+    </div>
+    
+<!-- END MAIN -->    
+</div>
+
+<script>
+    // Get the Sidebar
+    var mySidebar = document.getElementById("mySidebar");
+    // Get the DIV with overlay effect
+    var overlayBg = document.getElementById("myOverlay");
+
+    // Toggle between showing and hiding the sidebar, and add overlay effect
+    function w3_open() {
+        if (mySidebar.style.display === 'block') {
+            mySidebar.style.display = 'none';
+            overlayBg.style.display = "none";
+        } else {
+            mySidebar.style.display = 'block';
+            overlayBg.style.display = "block";
+        }
+    }
+
+    // Close the sidebar with the close button
+    function w3_close() {
+        mySidebar.style.display = "none";
+        overlayBg.style.display = "none";
+    }
+</script>
+
+</body>
+</html>
