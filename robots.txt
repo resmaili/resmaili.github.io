@@ -1,5 +1,2 @@
 User-agent: *
 Disallow:
-Disallow: /wedding/
-Disallow: /private-CEoDsWW7Xmu63alCMS4v/
-Disallow: /private/
