@@ -3,15 +3,15 @@
 <html>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    
+
     <title>Scientific Workshop</title>
-         
+
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
     <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    
+
     <style>
         html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
         .w3-sidebar {
@@ -22,7 +22,7 @@
           height: inherit;
         }
     </style>
-    
+
 <body>
 
 <!-- Sidebar -->
@@ -52,11 +52,11 @@
 
         <div class="w3-twothird w3-container">
             <h3 class="w3-text-indigo" id="overview"> Overview </h3>
-            <p>Are you tired of wrestling with satellite-based datasets? In this tutorial, you will get a crash course on using Python and other modern tools to analyze your satellite datasets which can speed up the learning curve and improve research efficiency. We’ll cover the basics of the NetCDF and HDF self-describing data formats, display data FAST using Panoply, and demo basic analysis using Python. Additionally, we share some of the best practices such as using version control and clean coding guidelines. This session will be beneficial for both experienced programmers who want overview of modern tools and also those just getting started with scientific programming. While examples will focus on GOES-R aerosol and radiation datasets, the presented tools and techniques can be applied to other NASA and NOAA scientific datasets across any discipline. No prior experience required. </p>
+            <p>Are you tired of wrestling with satellite-based datasets? In this tutorial, you will get a crash course on using Python and other modern tools to analyze your satellite datasets which can speed up the learning curve and improve research efficiency. We’ll cover the basics of the NetCDF and HDF self-describing data formats, display data FAST using Panoply, and demo basic analysis using Python. Additionally, we share some of the best practices such as using version control and clean coding guidelines. This session will be beneficial for both experienced programmers who want overview of modern tools and also those just getting started with scientific programming. While examples will focus on GOES-R and Suomi-NPP aerosol datasets, the presented tools and techniques can be applied to other NASA and NOAA scientific datasets across any discipline. No prior experience required. </p>
         </div>
-        
+
          <div class="w3-third w3-container">
-            <img class="w3-image" src="https://www.dropbox.com/s/pm57evjve3l7ghj/storm.jpg?raw=1">
+            <img class="w3-image" src="data/storm.jpg">
          </div>
 
     </div>
@@ -67,92 +67,97 @@
              <p> This course is designed to introduce earth scientists to modern programming tools and techniques to view and analyze data. The primary goal is for attendees to:
              <ul>
                 <li>Understand the basic structure of array-oriented scientific datasets
-                <li>Practice importing data into Python using NetCDF APIs 
+                <li>Practice importing data into Python using NetCDF APIs
                 <li>Perform basic analysis using Python
                 <li>Gain familiarity with good coding practices, e.g. version control, clean coding, and project development
                 <li>Introduce the helpful resources attendees need when they do get stuck
             </ul>
              </p>
         </div>
-         
+
     </div>
-    
+
   <div class="w3-row w3">
-  
+
         <div class="w3-twothird w3-container">
             <h3 class="w3-text-indigo" id="agenda"> Agenda </h3>
             <p>
             <ul>
                 <li>This is a “bring you own laptop” event.
                 <li>Please see the <a href="#setup">set-up instructions</a> prior to the beginning of the course. If further assistance is needed, contact the instructor in advance as time will be limited before the seminar.
-                <li>All sample code and resources will be available on the <a href="https://github.com/modern-tools-workshop">workshop GitHub repository </a>.
+                <!-- <li>All sample code and resources will be available on the <a href="https://github.com/modern-tools-workshop">workshop GitHub repository </a>. -->
                 <li>The instructor will remain on-site after the workshop to assist with any individual questions/projects.
             </ul>
 
             <table class="w3-table w3-striped">
               <tr><th>7:30am</th><th>Meet and greet/computing environment set-up</th></tr>
-              <tr><th>8:00am</th><th>Understanding and viewing to scientific data formats</th></tr>
-              <tr><th>9:00am</th><th>Importing and displaying data with Python</th></tr>
-              <tr><th>10:00am</th><th>Break</th></tr>
-              <tr><th>10:15am</th><th>Basic analysis with Python</th></tr>
-              <tr><th>11:00am</th><th>Version control</th></tr>
-              <tr><th>12:00am</th><th>Best coding practices and additional resources</th></tr>
+              <tr><th>8:00am</th><th>Importing and displaying data with Python and Jupyter Notebooks</th></tr>
+              <tr><th>9:30am</th><th>Understanding and viewing to scientific data formats</th></tr>
+              <tr><th>10:00am</th><th>Performing common remote sensing tasks with Python</th></tr>
+              <tr><th>12:00am</th><th>Version control and best coding practices</th></tr>
               <tr><th>12:20pm</th><th>Adjourn</th></tr>
             </table>
         </p>
         </div>
-    
+
         <div class="w3-third w3-container">
-            <img class="w3-image" src="https://www.dropbox.com/s/7831u3kdjshanb1/hurricanes.jpg?raw=1">
+            <img class="w3-image" src="data/hurricanes.jpg">
          </div>
-         
+
 </div>
     <div class="w3-row w3">
         <div class="w3-twothird w3-container">
-        
+
             <h3 class="w3-text-indigo" id="setup"> Pre-workshop set-up </h3>
+            <p> Installation Guides:
+                <ul>
+                  <li><a href="data/Python_Mac_Windows.pdf">Mac/Windows</a>
+                  <li><a href="data/Python_Linux.pdf">Linux</a>
+                  </ul>
+                </p>
             <p> Please download and/or install the following before the session begins:
             <ul>
             <li> <a href="https://goo.gl/forms/VzBiGNo1kRzWPxB02">Pre-workshop survey</a>
             <li> <a href="https://anaconda.org/anaconda/python">Anaconda Python</a>
             <li> <a href="https://www.giss.nasa.gov/tools/panoply/">Panoply</a> (requires <a href="http://www.java.com/">Java 8</a>)
-			<li> Create a <a href="https://github.com/">GitHub</a> account
-			<li> Connect to the <a href="https://github.com/modern-tools-workshop"> workshop GitHub repository </a>
+            <li> <a href="https://gitforwindows.org/">Git for Windows</a>
+			      <li> Create a <a href="https://github.com/">GitHub</a> account
+			<!-- <li> Connect to the <a href="https://github.com/modern-tools-workshop"> workshop GitHub repository </a> -->
             </ul>
             </p>
-            
+
         </div>
-        
+
                 <div class="w3-third w3-container">
-            <img class="w3-image" src="https://www.dropbox.com/s/qancu4osfblmig1/channels.jpg?raw=1">
+            <img class="w3-image" src="data/channels.jpg">
         </div>
-        
+
     </div>
-    
-    
+
+
     <div class="w3-row w3">
         <div class="w3-twothird w3-container">
-        
+
             <h3 class="w3-text-indigo" id="resources"> Resources </h3>
             <p>
                 <ul>
 				<li> <a href="https://www.python.org/dev/peps/pep-0020/"> The Zen of Python </a>
                 <li> <a href="https://guides.github.com/activities/hello-world/"> Getting started with Github </a>
-                <li> <a href="https://read.amazon.com/kp/embed?asin=B001GSTOAM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_CKKmBb2W9S12E"> Clean Coding: A Handbook of Agile Software Craftsmanship </a> 
+                <li> <a href="https://read.amazon.com/kp/embed?asin=B001GSTOAM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_CKKmBb2W9S12E"> Clean Coding: A Handbook of Agile Software Craftsmanship </a>
                 </ul>
             </p>
-            
+
         </div>
     </div>
-    
+
     <div class="w3-row w3 w3-margin-bottom">
         <div class="w3-twothird w3-container">
             <h3 class="w3-text-indigo" id="resources"> Inclusivity </h3>
             <p>It is my intent to create a learning environment that is respectful of diversity: gender, sexuality, disability, age, socioeconomic status, ethnicity, race, and culture. Your suggestions are encouraged and appreciated.</p>
         </div>
     </div>
-    
-<!-- END MAIN -->    
+
+<!-- END MAIN -->
 </div>
 
 <script>
