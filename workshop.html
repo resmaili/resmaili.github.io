@@ -47,13 +47,13 @@
 
   <div class="w3-row w3">
     <div class="w3-threequarter w3-container">
-        <h2 class="w3-text-indigo"> Python for Remote Sensing: Analysis, Visualization, and Workflow for Earth Scientists </h2>
-        <h5 class="w3-text-grey"> Instructor: Rebekah Esmaili </h5>
+        <h2 class="w3-text-indigo"> Python for Satellite Remote Sensing: Analysis and Visualization for Earth Scientists </h2>
+        <h5 class="w3-text-grey"> Instructors: Drs. Rebekah Esmaili and Amy Huff </h5>
     </div>
 
         <div class="w3-twothird w3-container">
             <h3 class="w3-text-indigo" id="overview"> Overview </h3>
-            <p>Are you tired of wrestling with satellite-based datasets? In this tutorial, you will get a crash course on using Python and other modern tools to analyze your satellite datasets which can speed up the learning curve and improve research efficiency. We’ll cover the basics of the NetCDF and HDF self-describing data formats, display data FAST using Panoply, and demo basic analysis using Python. Additionally, we share some of the best practices such as using version control and clean coding guidelines. This session will be beneficial for both experienced programmers who want overview of modern tools and also those just getting started with scientific programming. Examples will focus on NOAA and NASA datasets, the presented tools and techniques can be applied to other scientific datasets across other disciplines. No prior experience required. </p>
+            <p>In this workshop, participants will get a crash course on using Python to analyze satellite data. We will cover how to read satellite data formats like NetCDF and HDF, perform basic analysis, and create visualizations of satellite data. This session will be beneficial for both experienced programmers who want to learn Python and those just getting started with scientific programming. Examples will include datasets from the NOAA GOES-R and JPSS programs and other current sensors, but, the presented tools and techniques are transferable to other satellite datasets. No prior Python experience is required, but some coding familiarity is recommended. </p>
         </div>
 
          <div class="w3-third w3-container">
@@ -67,11 +67,10 @@
             <h3 class="w3-text-indigo" id="objectives"> Objectives </h3>
              <p> This course is designed to introduce earth scientists to modern programming tools and techniques to view and analyze data. The primary goal is for attendees to:
              <ul>
-                <li>Understand the basic structure of array-oriented scientific datasets
-                <li>Practice importing data into Python using NetCDF APIs
-                <li>Perform basic analysis using Python
-                <li>Gain familiarity with good coding practices, e.g. version control, clean coding, and project development
-                <li>Introduce the helpful resources to attendees if they get stuck
+                <li>Understand the basic structure of array-oriented satellite datasets
+                <li>Practice opening netCDF files and extracting the contents
+                <li>Perform basic array manipulation and analysis
+                <li>Gain familiarity with basic visualization, plotting, and mapping packages
             </ul>
              </p>
         </div>
@@ -82,7 +81,7 @@
 
         <div class="w3-twothird w3-container">
             <h3 class="w3-text-indigo" id="agenda"> Agenda </h3>
-            <p> All times in Mountain Standard Time (MST)<br>
+            <p> All times in Eastern Standard Time (EST)<br>
             <!-- <ul> -->
                 <!-- <li>This is a “bring you own laptop” event. -->
                 <!-- <li>Please see the <a href="#setup">set-up instructions</a> prior to the beginning of the course. If further assistance is needed, contact the instructor in advance as time will be limited before the seminar. -->
@@ -91,13 +90,12 @@
             <!-- </ul> -->
 
             <table class="w3-table w3-striped">
-              <tr><th>8:00am</th><th>Meet and greet/computing environment set-up</th></tr>
+              <tr><th>8:00am</th><th>Meet and greet/computing set-up</th></tr>
               <tr><th>8:15am</th><th>Basic Python and Jupyter Notebooks</th></tr>
-              <tr><th>9:00am</th><th>Understanding and viewing to scientific data formats</th></tr>
+              <tr><th>9:00am</th><th>Understanding and viewing satellite data formats</th></tr>
               <tr><th>9:30am</th><th>Importing scientific data files</th></tr>
-              <tr><th>10:00am</th><th>Visualizing satellite datasets</th></tr>
-              <tr><th>10:45am</th><th>Performing common remote sensing tasks with Python, Version Control</th></tr>
-              <tr><th>11:00am</th><th>Adjourn</th></tr>
+              <tr><th>10:00am</th><th>Processing and visualizing satellite data</th></tr>
+              <tr><th>11:30am</th><th>Adjourn</th></tr>
             </table>
         </p>
         </div>
@@ -114,11 +112,11 @@
             <p> Please download and/or install the following before the session begins:
             <ul>
             <li> Complete the <a href="https://goo.gl/forms/VzBiGNo1kRzWPxB02">Pre-workshop survey</a>
-            <li> Follow the steps in the <a href="data/Python_Mac_Windows.pdf">Installation Guide </a>
+            <li> Follow the steps in the <a href="data/Python_Mac_Windows.pdf">Installation guide </a>
             <!-- <li> <a href="https://www.giss.nasa.gov/tools/panoply/">Panoply</a> (requires <a href="http://www.java.com/">Java</a>) -->
             <!-- <li> <a href="https://gitforwindows.org/">Git for Windows</a> -->
-			      <li> Create a <a href="https://github.com/">GitHub</a> account
-				  <li> Connect to the <a href="https://github.com/modern-tools-workshop"> workshop GitHub repository </a>
+	    <li> (Optional) Create a <a href="https://github.com/">GitHub</a> account
+            <li> (Optional) Connect to the <a href="https://github.com/modern-tools-workshop"> workshop GitHub repository </a>
             </ul>
             </p>
 
@@ -135,9 +133,7 @@
         <div class="w3-twothird w3-container">
             <h3 class="w3-text-indigo" id="downloads"> Downloads </h3>
               <ul>
-                <li><a href="https://ter.ps/noaapy"> UMD Apr 2019 Workshop Notes/Data </a></li>
-                <li><a href="https://ter.ps/umdpy"> UMD Mar 2019 Workshop Notes/Data </a></li>
-         			  <li><a href="https://ter.ps/pydata"> AGU Dec 2018 Workshop Notes/Data </a></li>
+                <li>Check back later for 2024 updates!</li>
             </ul>
         </div>
     </div> -->
@@ -153,17 +149,15 @@
                 <li> <a href="https://www.python.org/dev/peps/pep-0008/"> Style Guide for Python Code </a>
 	              <li> <a href="https://www.python.org/dev/peps/pep-0020/"> The Zen of Python </a>
                 <li> <a href="https://guides.github.com/activities/hello-world/"> Getting started with Github </a>
-                <li> <a href="https://read.amazon.com/kp/embed?asin=B001GSTOAM&preview=newtab&linkCode=kpe&ref_=cm_sw_r_kb_dp_CKKmBb2W9S12E"> Clean Coding: A Handbook of Agile Software Craftsmanship </a> by Robert C. Martin.
                 </ul>
             </p>
-
         </div>
     </div>
 
     <div class="w3-row w3 w3-margin-bottom">
         <div class="w3-twothird w3-container">
             <h3 class="w3-text-indigo" id="resources"> Inclusivity </h3>
-            <p>It is my intent to create a learning environment that is respectful of diversity: gender, sexuality, disability, age, socioeconomic status, ethnicity, race, and culture. Your suggestions are encouraged and appreciated.</p>
+            <p>It is our intent to create a learning environment that is respectful of diversity: gender, sexuality, disability, age, socioeconomic status, ethnicity, race, and culture. Your suggestions are encouraged and appreciated.</p>
         </div>
     </div>
 
