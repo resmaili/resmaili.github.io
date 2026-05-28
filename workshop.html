@@ -1,135 +1,174 @@
 <!--<!DOCTYPE html>-->
 
 <html>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Scientific Workshop</title>
+<title>Scientific Workshop</title>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://www.w3schools.com/lib/w3-theme-black.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
-    <style>
-        html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif;}
-        .w3-sidebar {
-          z-index: 3;
-          width: 250px;
-          top: 0px;
-          bottom: 0;
-          height: inherit;
-        }
-    </style>
+<style>
+    html,
+    body,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "Roboto", sans-serif;
+    }
+
+    .w3-sidebar {
+        z-index: 3;
+        width: 250px;
+        top: 0px;
+        bottom: 0;
+        height: inherit;
+    }
+</style>
 
 <body>
 
-<!-- Sidebar -->
-<nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
-  <a href="javascript:void(0)" onclick="w3_close()" class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
-    <i class="fa fa-remove"></i>
-  </a>
-  <h4 class="w3-bar-item"><b>Menu</b></h4>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#overview">Overview</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#objectives">Objectives</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#agenda">Agenda</a>
-  <a class="w3-bar-item w3-button w3-hover-black" href="#setup">Set-up</a>
-  <!-- <a class="w3-bar-item w3-button w3-hover-black" href="#downloads">Downloads</a> -->
-  <a class="w3-bar-item w3-button w3-hover-black" href="#resources">Resources</a>
-</nav>
+    <!-- Sidebar -->
+    <nav class="w3-sidebar w3-bar-block w3-collapse w3-large w3-theme-l5 w3-animate-left" id="mySidebar">
+        <a href="javascript:void(0)" onclick="w3_close()"
+            class="w3-right w3-xlarge w3-padding-large w3-hover-black w3-hide-large" title="Close Menu">
+            <i class="fa fa-remove"></i>
+        </a>
+        <h4 class="w3-bar-item"><b>Menu</b></h4>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#overview">Overview</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#objectives">Objectives</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#agenda">Agenda</a>
+        <a class="w3-bar-item w3-button w3-hover-black" href="#setup">Set-up</a>
+        <!-- <a class="w3-bar-item w3-button w3-hover-black" href="#downloads">Downloads</a> -->
+        <a class="w3-bar-item w3-button w3-hover-black" href="#resources">Resources</a>
+    </nav>
 
-<!-- Overlay effect when opening sidebar on small screens -->
-<div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+    <!-- Overlay effect when opening sidebar on small screens -->
+    <div class="w3-overlay w3-hide-large" onclick="w3_close()" style="cursor:pointer" title="close side menu"
+        id="myOverlay"></div>
 
-<!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
-<div class="w3-main" style="margin-left:250px">
+    <!-- Main content: shift it to the right by 250 pixels when the sidebar is visible -->
+    <div class="w3-main" style="margin-left:250px">
 
-  <div class="w3-row w3">
-    <div class="w3-threequarter w3-container">
-        <h2 class="w3-text-indigo"> Python for Satellite Remote Sensing: Analysis and Visualization for Earth Scientists </h2>
-        <h5 class="w3-text-grey"> Instructors: Drs. Rebekah Esmaili, Amy Huff, Vrinda Desai </h5>
-    </div>
+        <div class="w3-row w3">
+            <div class="w3-threequarter w3-container">
+                <h2 class="w3-text-indigo"> Python for Satellite Remote Sensing: Analysis and Visualization for Earth
+                    Scientists </h2>
+                <h5 class="w3-text-grey"> Instructors: Dr. Rebekah Esmaili and Dr. Amy Huff </h5>
+            </div>
 
-        <div class="w3-twothird w3-container">
-            <h3 class="w3-text-indigo" id="overview"> Overview </h3>
-            <p>In this workshop, participants will get a crash course on using Python to analyze satellite data. We will cover how to read satellite data formats like NetCDF and HDF, perform basic analysis, and create visualizations of satellite data. This session will be beneficial for both experienced programmers who want to learn Python and those just getting started with scientific programming. Examples will include datasets from the NOAA GOES-R and JPSS programs and other current sensors, but, the presented tools and techniques are transferable to other satellite datasets. No prior Python experience is required, but some coding familiarity is recommended. </p>
-        </div>
+            <div class="w3-twothird w3-container">
+                <h3 class="w3-text-indigo" id="overview"> Overview </h3>
+                <p>In this workshop, participants will get a crash course on using Python to analyze satellite data. We
+                    will cover how to read satellite data formats like NetCDF and HDF, perform basic analysis, and
+                    create visualizations of satellite data. This session will be beneficial for both experienced
+                    programmers who want to learn Python and those just getting started with scientific programming.
+                    Examples will include NASA and NOAA satellite datasets,
+                    but the presented tools and techniques are transferable to other satellite datasets. No prior
+                    Python experience is required, but some coding familiarity is recommended. </p>
+            </div>
 
-         <div class="w3-third w3-container">
-            <img class="w3-image" src="data/storm.jpg">
-         </div>
-
-    </div>
-
-      <div class="w3-row w3">
-        <div class="w3-twothird w3-container">
-            <h3 class="w3-text-indigo" id="objectives"> Objectives </h3>
-             <p> This course is designed to introduce earth scientists to modern programming tools and techniques to view and analyze data. The primary goal is for attendees to:
-             <ul>
-                <li>Understand the basic structure of array-oriented satellite datasets
-                <li>Practice opening netCDF files and extracting the contents
-                <li>Perform basic array manipulation and analysis
-                <li>Gain familiarity with basic visualization, plotting, and mapping packages
-            </ul>
-             </p>
-        </div>
-
-    </div>
-
-  <div class="w3-row w3">
-
-        <div class="w3-twothird w3-container">
-            <h3 class="w3-text-indigo" id="agenda"> Agenda </h3>
-            <p> All times in Eastern Standard Time (EST)<br>
-            <!-- <ul> -->
-                <!-- <li>This is a “bring you own laptop” event. -->
-                <!-- <li>Please see the <a href="#setup">set-up instructions</a> prior to the beginning of the course. If further assistance is needed, contact the instructor in advance as time will be limited before the seminar. -->
-                <!-- <li>All sample code and resources will be available on the <a href="https://github.com/modern-tools-workshop">workshop GitHub repository </a> -->
-                <!-- <li>The instructor will remain on-site after the workshop to assist with any individual questions/projects. -->
-            <!-- </ul> -->
-
-            <table class="w3-table w3-striped">
-              <tr><th>8:00am</th><th>Meet and greet/computing set-up</th></tr>
-              <tr><th>8:15am</th><th>Basic Python and Jupyter Notebooks</th></tr>
-              <tr><th>9:00am</th><th>Understanding and viewing satellite data formats</th></tr>
-              <tr><th>9:30am</th><th>Importing scientific data files</th></tr>
-              <tr><th>10:00am</th><th>Processing and visualizing satellite data</th></tr>
-              <tr><th>11:30am</th><th>Adjourn</th></tr>
-            </table>
-        </p>
-        </div>
-
-        <div class="w3-third w3-container">
-            <img class="w3-image" src="data/hurricanes.jpg">
-         </div>
-
-</div>
-    <div class="w3-row w3">
-        <div class="w3-twothird w3-container">
-
-            <h3 class="w3-text-indigo" id="setup"> Pre-workshop set-up </h3>
-            <p> Please download and/or install the following before the session begins:
-            <ul>
-            <li> Complete the <a href="https://goo.gl/forms/VzBiGNo1kRzWPxB02">Pre-workshop survey</a>
-            <li> Follow the steps in the <a href="data/Python_Mac_Windows.pdf">Installation guide </a>
-            <!-- <li> <a href="https://www.giss.nasa.gov/tools/panoply/">Panoply</a> (requires <a href="http://www.java.com/">Java</a>) -->
-            <!-- <li> <a href="https://gitforwindows.org/">Git for Windows</a> -->
-	    <li> (Optional) Create a <a href="https://github.com/">GitHub</a> account
-            <li> (Optional) Connect to the <a href="https://github.com/modern-tools-workshop"> workshop GitHub repository </a>
-            </ul>
-            </p>
+            <div class="w3-third w3-container">
+                <img class="w3-image" src="data/storm.jpg">
+            </div>
 
         </div>
 
-                <div class="w3-third w3-container">
-            <img class="w3-image" src="data/channels.jpg">
+        <div class="w3-row w3">
+            <div class="w3-twothird w3-container">
+                <h3 class="w3-text-indigo" id="objectives"> Objectives </h3>
+                <p> This course is designed to introduce earth scientists to modern programming tools and techniques to
+                    view and analyze data. The primary goal is for attendees to:
+                <ul>
+                    <li>Understand the basic structure of array-oriented satellite datasets
+                    <li>Practice opening netCDF files and extracting the contents
+                    <li>Perform basic array manipulation and analysis
+                    <li>Gain familiarity with basic visualization, plotting, and mapping packages
+                </ul>
+                </p>
+            </div>
+
         </div>
 
-    </div>
+        <div class="w3-row w3">
+
+            <div class="w3-twothird w3-container">
+                <h3 class="w3-text-indigo" id="agenda"> Agenda </h3>
+                <p> All times in Eastern Standard Time (EST)<br>
+                    <!-- <ul> -->
+                    <!-- <li>This is a “bring you own laptop” event. -->
+                    <!-- <li>Please see the <a href="#setup">set-up instructions</a> prior to the beginning of the course. If further assistance is needed, contact the instructor in advance as time will be limited before the seminar. -->
+                    <!-- <li>All sample code and resources will be available on the <a href="https://github.com/modern-tools-workshop">workshop GitHub repository </a> -->
+                    <!-- <li>The instructor will remain on-site after the workshop to assist with any individual questions/projects. -->
+                    <!-- </ul> -->
+
+                <table class="w3-table w3-striped">
+                    <tr>
+                        <th>8:00am</th>
+                        <th>Meet and greet/computing set-up</th>
+                    </tr>
+                    <tr>
+                        <th>8:15am</th>
+                        <th>Basic Python and Jupyter Notebooks</th>
+                    </tr>
+                    <tr>
+                        <th>9:00am</th>
+                        <th>Understanding and viewing satellite data formats</th>
+                    </tr>
+                    <tr>
+                        <th>9:30am</th>
+                        <th>Importing scientific data files</th>
+                    </tr>
+                    <tr>
+                        <th>10:00am</th>
+                        <th>Processing and visualizing satellite data</th>
+                    </tr>
+                    <tr>
+                        <th>11:30am</th>
+                        <th>Adjourn</th>
+                    </tr>
+                </table>
+                </p>
+            </div>
+
+            <div class="w3-third w3-container">
+                <img class="w3-image" src="data/hurricanes.jpg">
+            </div>
+
+        </div>
+        <div class="w3-row w3">
+            <div class="w3-twothird w3-container">
+
+                <h3 class="w3-text-indigo" id="setup"> Pre-workshop set-up </h3>
+                <p> Please download and/or install the following before the session begins:
+                <ul>
+                    <li> Complete the <a href="https://goo.gl/forms/VzBiGNo1kRzWPxB02">Pre-workshop survey</a>
+                    <li> Follow the steps in the <a href="data/Python_Mac_Windows.pdf">Installation guide </a>
+                        <!-- <li> <a href="https://www.giss.nasa.gov/tools/panoply/">Panoply</a> (requires <a href="http://www.java.com/">Java</a>) -->
+                        <!-- <li> <a href="https://gitforwindows.org/">Git for Windows</a> -->
+                    <li> (Optional) Create a <a href="https://github.com/">GitHub</a> account
+                    <li> (Optional) Connect to the <a href="https://github.com/modern-tools-workshop"> workshop GitHub
+                            repository </a>
+                </ul>
+                </p>
+
+            </div>
+
+            <div class="w3-third w3-container">
+                <img class="w3-image" src="data/channels.jpg">
+            </div>
+
+        </div>
 
 
-    <!-- <div class="w3-row w3">
+        <!-- <div class="w3-row w3">
         <div class="w3-twothird w3-container">
             <h3 class="w3-text-indigo" id="downloads"> Downloads </h3>
               <ul>
@@ -138,55 +177,58 @@
         </div>
     </div> -->
 
-    <div class="w3-row w3">
-        <div class="w3-twothird w3-container">
+        <div class="w3-row w3">
+            <div class="w3-twothird w3-container">
 
-            <h3 class="w3-text-indigo" id="resources"> Resources </h3>
-            <p>
+                <h3 class="w3-text-indigo" id="resources"> Resources </h3>
+                <p>
                 <ul>
-                <li><A href="https://www.wiley.com/en-us/Earth+Observation+using+Python%3A+A+Practical+Programming+Guide-p-9781119606888">Earth Observation using Python</a></li>
-                <li> <a href="https://www.amazon.com/Python-Programming-Visualization-Scientists-DeCaria/dp/0972903380">Python Programming and Visualization for Scientists</a> by Alex Joseph DeCaria.
-                <li> <a href="https://www.python.org/dev/peps/pep-0008/"> Style Guide for Python Code </a>
-	              <li> <a href="https://www.python.org/dev/peps/pep-0020/"> The Zen of Python </a>
-                <li> <a href="https://guides.github.com/activities/hello-world/"> Getting started with Github </a>
+                    <li> <a
+                            href="https://www.amazon.com/Python-Programming-Visualization-Scientists-DeCaria/dp/0972903380">Python
+                            Programming and Visualization for Scientists</a> by Alex Joseph DeCaria.
+                    <li> <a href="https://www.python.org/dev/peps/pep-0008/"> Style Guide for Python Code </a>
+                    <li> <a href="https://www.python.org/dev/peps/pep-0020/"> The Zen of Python </a>
+                    <li> <a href="https://guides.github.com/activities/hello-world/"> Getting started with Github </a>
                 </ul>
-            </p>
+                </p>
+            </div>
         </div>
+
+        <div class="w3-row w3 w3-margin-bottom">
+            <div class="w3-twothird w3-container">
+                <h3 class="w3-text-indigo" id="resources"> Feedback </h3>
+                <p>It is our intent to create a learning environment that is respectful. Your suggestions are encouraged
+                    and appreciated.</p>
+            </div>
+        </div>
+
+        <!-- END MAIN -->
     </div>
 
-    <div class="w3-row w3 w3-margin-bottom">
-        <div class="w3-twothird w3-container">
-            <h3 class="w3-text-indigo" id="resources"> Feedback </h3>
-            <p>It is our intent to create a learning environment that is respectful. Your suggestions are encouraged and appreciated.</p>
-        </div>
-    </div>
+    <script>
+        // Get the Sidebar
+        var mySidebar = document.getElementById("mySidebar");
+        // Get the DIV with overlay effect
+        var overlayBg = document.getElementById("myOverlay");
 
-<!-- END MAIN -->
-</div>
-
-<script>
-    // Get the Sidebar
-    var mySidebar = document.getElementById("mySidebar");
-    // Get the DIV with overlay effect
-    var overlayBg = document.getElementById("myOverlay");
-
-    // Toggle between showing and hiding the sidebar, and add overlay effect
-    function w3_open() {
-        if (mySidebar.style.display === 'block') {
-            mySidebar.style.display = 'none';
-            overlayBg.style.display = "none";
-        } else {
-            mySidebar.style.display = 'block';
-            overlayBg.style.display = "block";
+        // Toggle between showing and hiding the sidebar, and add overlay effect
+        function w3_open() {
+            if (mySidebar.style.display === 'block') {
+                mySidebar.style.display = 'none';
+                overlayBg.style.display = "none";
+            } else {
+                mySidebar.style.display = 'block';
+                overlayBg.style.display = "block";
+            }
         }
-    }
 
-    // Close the sidebar with the close button
-    function w3_close() {
-        mySidebar.style.display = "none";
-        overlayBg.style.display = "none";
-    }
-</script>
+        // Close the sidebar with the close button
+        function w3_close() {
+            mySidebar.style.display = "none";
+            overlayBg.style.display = "none";
+        }
+    </script>
 
 </body>
+
 </html>
